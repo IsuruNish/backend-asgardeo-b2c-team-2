@@ -1,0 +1,16 @@
+{
+  "name": "backend-asgardeo-b2c-team-2",
+  "version": "1.0.0",
+  "description": "Codes written for WSO2 Asgardeo B2C Application Development hackathon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  }
+}
