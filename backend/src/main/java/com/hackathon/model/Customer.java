@@ -1,6 +1,7 @@
 package com.hackathon.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Customer {
@@ -13,6 +14,8 @@ public class Customer {
     private Integer points;
     @Transient
     private String tier;
+    @OneToMany(mappedBy = "device")
+    private Set<DevicePurchase> purchases;
 
     public Customer() {
     }
@@ -43,5 +46,9 @@ public class Customer {
             return "Silver";
         else
             return "No_Tier";
+    }
+
+    public Set<DevicePurchase> getPurchases() {
+        return purchases;
     }
 }

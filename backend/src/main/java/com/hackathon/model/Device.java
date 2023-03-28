@@ -3,6 +3,8 @@ package com.hackathon.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Entity
 public class Device {
@@ -19,6 +21,8 @@ public class Device {
     private String brand;
     @Column(columnDefinition = "TEXT")
     private String description;
+    @OneToMany(mappedBy = "customer")
+    private Set<DevicePurchase> purchases;
 
     public Device() {
     }
@@ -54,5 +58,9 @@ public class Device {
 
     public String getDescription() {
         return description;
+    }
+
+    public Set<DevicePurchase> getPurchases() {
+        return purchases;
     }
 }
