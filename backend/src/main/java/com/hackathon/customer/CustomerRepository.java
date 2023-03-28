@@ -1,8 +1,8 @@
-package com.hackathon.model;
+package com.hackathon.customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DeviceRepository extends JpaRepository<Device, String> {
+public interface CustomerRepository extends JpaRepository<Customer, String> {
 }

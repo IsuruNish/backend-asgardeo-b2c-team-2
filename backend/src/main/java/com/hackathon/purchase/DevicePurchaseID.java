@@ -1,4 +1,7 @@
-package com.hackathon.model;
+package com.hackathon.purchase;
+
+import com.hackathon.customer.Customer;
+import com.hackathon.device.Device;
 
 import java.io.Serializable;
 

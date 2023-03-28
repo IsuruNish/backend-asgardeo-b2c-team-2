@@ -1,4 +1,4 @@
-package com.hackathon.model;
+package com.hackathon.service;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

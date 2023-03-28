@@ -1,4 +1,6 @@
-package com.hackathon.model;
+package com.hackathon.device;
+
+import com.hackathon.purchase.DevicePurchase;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
