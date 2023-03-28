@@ -15,7 +15,7 @@ public class ServicePurchase {
     private Customer customer;
     @Id
     @ManyToOne
-    @JoinColumn(name = "device_id", nullable = false)
+    @JoinColumn(name = "service_id", nullable = false)
     private Service service;
 
     public ServicePurchase() {
