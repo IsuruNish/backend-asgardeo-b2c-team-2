@@ -1,7 +1,6 @@
-package com.hackathon.purchase;
+package com.hackathon.purchase.servicepurchase;
 
 import com.hackathon.customer.Customer;
-import com.hackathon.device.Device;
 import com.hackathon.service.Service;
 
 import javax.persistence.*;

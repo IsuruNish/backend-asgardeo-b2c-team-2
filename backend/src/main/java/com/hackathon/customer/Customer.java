@@ -1,6 +1,6 @@
 package com.hackathon.customer;
 
-import com.hackathon.purchase.DevicePurchase;
+import com.hackathon.purchase.devicepurchase.DevicePurchase;
 
 import javax.persistence.*;
 import java.util.Set;

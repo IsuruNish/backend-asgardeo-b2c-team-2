@@ -1,4 +1,4 @@
-package com.hackathon.purchase;
+package com.hackathon.purchase.servicepurchase;
 
 public class ServicePurchaseRequest {
     private String customerEmail;
