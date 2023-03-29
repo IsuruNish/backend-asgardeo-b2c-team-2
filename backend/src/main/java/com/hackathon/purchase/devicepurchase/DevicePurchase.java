@@ -29,12 +29,12 @@ public class DevicePurchase {
         return customer;
     }
 
-    public Device getDevice() {
-        return device;
-    }
-
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Device getDevice() {
+        return device;
     }
 
     public void setDevice(Device device) {

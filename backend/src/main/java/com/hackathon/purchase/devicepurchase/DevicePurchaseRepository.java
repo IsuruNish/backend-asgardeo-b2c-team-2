@@ -12,7 +12,7 @@ public interface DevicePurchaseRepository extends JpaRepository<DevicePurchase, 
     @Transactional
     @Query(
             value =
-                    "INSERT INTO device_purchase (customer_email, device_id) VALUES (:customerEmail, :deviceId)",
+                    "INSERT INTO device_purchase (customer_id, device_id) VALUES (:customerEmail, :deviceId)",
             nativeQuery = true)
     void addDevicePurchase(String customerEmail, String deviceId);
 }

@@ -29,12 +29,12 @@ public class ServicePurchase {
         return customer;
     }
 
-    public Service getService() {
-        return service;
-    }
-
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Service getService() {
+        return service;
     }
 
     public void setService(Service service) {
