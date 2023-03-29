@@ -1,4 +1,4 @@
-package com.hackathon.purchase;
+package com.hackathon.purchase.devicepurchase;
 
 import com.hackathon.customer.Customer;
 import com.hackathon.device.Device;

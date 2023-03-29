@@ -1,4 +1,4 @@
-package com.hackathon.purchase;
+package com.hackathon.purchase.servicepurchase;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

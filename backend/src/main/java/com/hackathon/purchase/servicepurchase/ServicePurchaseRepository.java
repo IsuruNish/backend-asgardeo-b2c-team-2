@@ -1,4 +1,4 @@
-package com.hackathon.purchase;
+package com.hackathon.purchase.servicepurchase;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
