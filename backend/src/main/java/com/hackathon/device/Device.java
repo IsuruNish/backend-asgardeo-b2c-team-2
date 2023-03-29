@@ -23,6 +23,8 @@ public class Device {
     private String brand;
     @Column(columnDefinition = "TEXT")
     private String description;
+    @Column(columnDefinition = "TEXT")
+    private String imagePath;
     @OneToMany(mappedBy = "customer")
     private Set<DevicePurchase> purchases;
 
@@ -64,5 +66,13 @@ public class Device {
 
     public Set<DevicePurchase> getPurchases() {
         return purchases;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 }
