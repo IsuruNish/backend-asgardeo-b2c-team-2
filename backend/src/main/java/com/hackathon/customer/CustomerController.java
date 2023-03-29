@@ -12,7 +12,7 @@ public class CustomerController {
 
     @Autowired
     private CustomerRepository customerRepository;
-    @PostMapping("addnewcustomer")
+    @PostMapping("addnew")
     public void addNewCustomer(@RequestBody Customer customerData) {
         customerRepository.save(customerData);
     }
