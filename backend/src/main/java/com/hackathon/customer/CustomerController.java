@@ -12,8 +12,10 @@ public class CustomerController {
 
     @Autowired
     private CustomerRepository customerRepository;
-    @PostMapping("addnew")
-    public void addNewCustomer(@RequestBody Customer customerData) {
+
+    @PostMapping("addnewcustomer")
+    public void adwCustomer(@RequestBody Customer customerData) {
+
         customerRepository.save(customerData);
     }
 }
