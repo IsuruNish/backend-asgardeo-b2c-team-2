@@ -16,6 +16,9 @@ public class ServicePurchaseController {
 
     @PostMapping("addnewservicepurchase")
     public void addNewServicePurchase(@RequestBody ServicePurchaseRequest servicePurchaseRequest) {
-        servicePurchaseRepository.addServicePurchase(servicePurchaseRequest.getCustomerEmail(), servicePurchaseRequest.getServiceId());
+        servicePurchaseRepository.addServicePurchase(
+                servicePurchaseRequest.getCustomerEmail(),
+                servicePurchaseRequest.getServiceId()
+        );
     }
 }
