@@ -6,13 +6,16 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.util.Set;
 
 @Entity
 public class Device {
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name = "id", nullable = false, updatable = false)
-    private String id;
+    private Integer id;
     @Column(columnDefinition = "TEXT")
     private String type;
     @Column(columnDefinition = "TEXT")
@@ -31,7 +34,7 @@ public class Device {
     public Device() {
     }
 
-    public Device(String id, String type, String name, Integer price, String brand, String description) {
+    public Device(Integer id, String type, String name, Integer price, String brand, String description) {
         this.id = id;
         this.type = type;
         this.name = name;
@@ -40,7 +43,7 @@ public class Device {
         this.description = description;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 

@@ -1,14 +1,13 @@
 package com.hackathon.service;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Service {
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name = "id", nullable = false, updatable = false)
-    private String id;
+    private Integer id;
     @Column(columnDefinition = "TEXT")
     private String type;
     @Column(columnDefinition = "TEXT")
@@ -19,14 +18,13 @@ public class Service {
     public Service() {
     }
 
-    public Service(String id, String type, String name, Integer price) {
-        this.id = id;
+    public Service(String type, String name, Integer price) {
         this.type = type;
         this.name = name;
         this.price = price;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
