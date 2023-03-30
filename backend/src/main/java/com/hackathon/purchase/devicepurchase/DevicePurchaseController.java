@@ -14,6 +14,7 @@ public class DevicePurchaseController {
     @Autowired
     private DevicePurchaseRepository devicePurchaseRepository;
 
+//    FIXME: Ideally the parameters should be in the body, but for now, we'll use the path
     @PostMapping("addnewdevicepurchase/{customerEmail}/{deviceId}")
     public void addNewDevicePurchase(@PathVariable String customerEmail, @PathVariable String deviceId) {
         devicePurchaseRepository.addDevicePurchase(
